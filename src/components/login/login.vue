@@ -19,8 +19,6 @@
 </template>
 
 <script>
-// import '@/assets/js/jquery-3.3.1.min'
-// import '@/assets/js/canva_moving_effect'
 export default {
   data () {
     return {
@@ -50,6 +48,7 @@ export default {
         return
       }
       this.$Message.success('登陆成功')
+      this.$router.push({path: '/index'})
     }
   }
 }
